@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 780px;
+  height: 550px;
+}
+
+.clearAll {
+  width: 100%;
+}
+
+.tableWrapper {
+  width: 100%;
+  margin: 6px 0 0;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.settingsTable {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.originColumn, .contentColumn {
+  width: 40%;
+}
+
+.statusColumn, .actionsColumn {
+  width: 10%;
+}
+
+.settingsTable td, .settingsTable th {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.settingsTable th {
+  position: sticky;
+  top: 0;
+  background: #ddd;
+  box-shadow: inset 0px -1px #888;
+
+}
+
+.settingsTable tr {
+  height: 30px;
+}
+
+.settingsTable tbody tr:hover {
+  background: #ddd;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}

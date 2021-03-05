@@ -1,0 +1,19 @@
+{
+  "name": "Script injector",
+  "version": "1.0",
+  "description": "Insert js into website!",
+  "permissions": ["tabs", "activeTab", "scripting", "storage", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "/popup/index.html",
+    "default_icon": "/images/icon.png"
+  },
+  "options_ui": {
+    "page": "/options/index.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "manifest_version": 3
+}

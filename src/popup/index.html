@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="switchContainer">
+      <label class="switch">
+        <input id="switchInput" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span class="switchText">
+        Inject scripts for origin: <strong id="originText"></strong> ?
+      </span>
+      <button id="settingsTrigger" class="settingsTrigger">Settings</button>
+    </div>
+    <textarea id="textArea" name="textArea" rows="30" placeholder="alert('hello');"></textarea>
+    <button id="saveScript">Save script</button>
+  </body>
+</html>
