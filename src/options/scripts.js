@@ -49,8 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const $button = document.createElement('button')
     $button.innerHTML = 'Delete!'
     $button.addEventListener('click', () => {
-      chrome.storage.local.remove(origin, fillSettings)
+      chrome.storage.local.remove(origin, removeRow)
     })
     $action.appendChild($button)
+
+    function removeRow() {
+      $settingsTableBody.removeChild($row)
+    }
   }
 })
